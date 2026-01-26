@@ -1,0 +1,117 @@
+.footer {
+    width: 100%;
+    background: linear-gradient(180deg,
+            rgba(17, 34, 64, 0.9),
+            rgba(10, 25, 47, 1));
+    border-top: 1px solid var(--border-subtle);
+    margin-top: 6rem;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+/* -------------------------------
+   BRAND
+-------------------------------- */
+.footer-brand h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-brand p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 320px;
+}
+
+/* -------------------------------
+   NAV LINKS
+-------------------------------- */
+.footer-nav h4,
+.footer-socials h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.footer-nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--accent);
+    transform: translateX(4px);
+}
+
+/* -------------------------------
+   SOCIALS
+-------------------------------- */
+.footer-socials .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.footer-socials a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-socials a:hover {
+    color: var(--accent);
+    transform: translateX(4px);
+}
+
+/* -------------------------------
+   BOTTOM BAR
+-------------------------------- */
+.footer-bottom {
+    border-top: 1px solid var(--border-subtle);
+    padding: 1.2rem 2rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.4px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: left;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+    }
+}

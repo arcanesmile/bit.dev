@@ -1,0 +1,88 @@
+/* NAVBAR */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    padding: 0 3rem;
+}
+
+/* Logo / Brand */
+.nav-logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+
+/* Navigation links wrapper */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+/* Individual nav links */
+.nav-links a {
+    position: relative;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: color 0.25s ease;
+}
+
+/* Hover underline animation */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width 0.75s ease;
+}
+
+/* Hover state */
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* Active nav link */
+.nav-links a.active {
+    color: var(--accent);
+}
+
+/* Keep underline visible for active link */
+.nav-links a.active::after {
+    width: 100%;
+}
+/* RESPONSIVE NAVBAR */
+@media (max-width: 900px) {
+    .nav-inner {
+        padding: 0 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1.25rem;
+    }
+}

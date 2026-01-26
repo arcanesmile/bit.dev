@@ -1,0 +1,119 @@
+/* ================================
+   HERO SECTION
+   Left static panel content
+================================ */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    /* padding: 4rem 3rem; */
+    background-color: transparent;
+    margin-top: 4rem;
+}
+
+/* Wrapper to constrain text width */
+/* .hero-section>div { */
+    /* max-width: 560px; */
+/* } */
+
+/* ================================
+   HERO TYPOGRAPHY
+================================ */
+
+.hero-section h1 {
+    color: var(--text-primary);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+.hero-section h2 {
+    margin-top: 0.75rem;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.hero-section p {
+    margin-top: 1.75rem;
+    max-width: 520px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* ================================
+   HERO ACTION BUTTONS
+================================ */
+
+.hero-actions {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Reuse outline button style but tuned for hero */
+.hero-actions a {
+    padding: 0.75rem 1.75rem;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    color: var(--accent);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.75s ease,
+    color 0.75s ease,
+    transform 0.75s ease;
+}
+
+.hero-actions a:hover {
+    background-color: var(--text-primary);
+    transform: translateY(-2px);
+    border: none;
+    color: var(--bg-secondary);
+}
+
+/* ================================
+   HERO SOCIAL ICONS
+================================ */
+
+.hero-socials {
+    margin-top: 6rem;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.social-icon {
+    color: var(--text-muted);
+    transition: color 0.75s ease, transform 0.75s ease;
+}
+
+.social-icon:hover {
+    color: var(--accent);
+    transform: translateY(-3px);
+}
+
+/* ================================
+   RESPONSIVE HERO
+================================ */
+
+@media (max-width: 900px) {
+    .hero-section {
+        padding: 3rem 1.5rem;
+        /* margin-top: -4rem; */
+    }
+
+    .hero-section h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .hero-socials {
+        margin-top: 3rem;
+    }
+}

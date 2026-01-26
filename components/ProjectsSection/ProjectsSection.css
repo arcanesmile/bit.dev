@@ -1,0 +1,17 @@
+.projects-section {
+    padding: 3rem 0;
+}
+
+/* Section title */
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+/* Card list wrapper */
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

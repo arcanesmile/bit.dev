@@ -1,0 +1,72 @@
+/* ===== Experience Section ===== */
+.experience-section {
+    padding: 3rem 0;
+    margin-top: 2rem;
+}
+
+/* Section title */
+.experience-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+/* Card list wrapper */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Individual experience card */
+.experience-card {
+    background-color: var(--bg-secondary);
+    padding: 1.75rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-subtle);
+}
+
+/* Role title */
+.experience-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: var(--accent);
+}
+
+/* Company name */
+.experience-card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-secondary);
+}
+
+/* Duration text */
+.duration {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+/* Description */
+.experience-card p {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+/* Tech stack tags */
+.tech-stack {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tech {
+    font-size: 0.75rem;
+    background-color: rgba(100, 255, 218, 0.08);
+    color: var(--accent);
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+}
