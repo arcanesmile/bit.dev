@@ -130,6 +130,9 @@
 
 /* RESPONSIVE NAVBAR */
 @media (max-width: 900px) {
+    .navbar {
+            position: sticky;
+    }
     .nav-inner {
         padding: 0 1.5rem;
     }
