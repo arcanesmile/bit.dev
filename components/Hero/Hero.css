@@ -96,24 +96,98 @@
 }
 
 /* ================================
-   RESPONSIVE HERO
+   HERO SECTION
+   Mobile Responsive Adjustments
 ================================ */
 
 @media (max-width: 900px) {
     .hero-section {
-        padding: 3rem 1.5rem;
-        /* margin-top: -4rem; */
+        flex-direction: column;
+        /* Stack content vertically */
+        align-items: flex-start;
+        /* Align left for text */
+        /* padding: 2rem 1.5rem; */
+        /* Reduce padding for mobile */
+        margin-top: 4rem;
+        /* Reduce top margin */
     }
 
+    /* Hero Typography Adjustments */
     .hero-section h1 {
-        font-size: 2.6rem;
+        font-size: 2rem;
+        /* Smaller heading */
+        line-height: 1.2;
     }
 
     .hero-section h2 {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
+        /* Smaller subheading */
+        margin-top: 0.5rem;
     }
 
+    .hero-section p {
+        font-size: 0.9rem;
+        /* Slightly smaller paragraph */
+        max-width: 100%;
+        /* Full width for mobile */
+        margin-top: 1rem;
+    }
+
+    /* Hero Actions Buttons */
+    .hero-actions {
+        /* flex-direction: column; */
+        /* Stack buttons vertically */
+        gap: 1rem;
+        /* Reduce gap */
+        width: 100%;
+        /* Fill width */
+    }
+
+    .hero-actions a {
+        width: 100%;
+        /* Full-width buttons */
+        text-align: center;
+        /* Center text */
+        padding: 0.75rem 0;
+        /* Reduce horizontal padding */
+        font-size: 0.75rem;
+        /* Slightly smaller font */
+    }
+
+    /* Hero Social Icons */
     .hero-socials {
-        margin-top: 3rem;
+        margin-top: 2rem;
+        /* Reduce top margin */
+        gap: 1rem;
+        /* Reduce gap */
+    }
+
+    .social-icon {
+        font-size: 1.25rem;
+        /* Slightly smaller icons */
+    }
+}
+
+/* Additional smaller screen tweaks */
+@media (max-width: 500px) {
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1rem;
+    }
+
+    .hero-section p {
+        font-size: 0.85rem;
+    }
+
+    .hero-actions a {
+        font-size: 0.7rem;
+        padding: 0.65rem 0;
+    }
+
+    .social-icon {
+        font-size: 1.1rem;
     }
 }
